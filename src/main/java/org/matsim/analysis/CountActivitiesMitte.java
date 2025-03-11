@@ -10,7 +10,6 @@ import org.matsim.core.utils.geometry.transformations.TransformationFactory;
 import org.matsim.core.utils.gis.GeoFileReader;
 import org.locationtech.jts.geom.Geometry;
 
-import javax.swing.*;
 import java.util.stream.Collectors;
 
 public class CountActivitiesMitte {
@@ -19,7 +18,7 @@ public class CountActivitiesMitte {
 
         var shapeFileName = "C:\\Users\\Qiu\\Downloads\\Berlin_Bezirksgrenzen_-2292027283764261881\\Berlin_Bezirke.shp";
         var plansFileName = "C:\\Users\\Qiu\\Downloads\\berlin-v5.5.3-1pct.output_plans.xml.gz";
-        var transformation = TransformationFactory.getCoordinateTransformation("EPSG:31468", "EPSG:3857")
+        var transformation = TransformationFactory.getCoordinateTransformation("EPSG:31468", "EPSG:3857");
 
         var features = GeoFileReader.getAllFeatures(shapeFileName);
 
